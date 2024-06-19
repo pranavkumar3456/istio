@@ -1,0 +1,7 @@
+#Installation of Istio
+
+- Follow the link
+https://istio.io/latest/docs/setup/getting-started/
+
+- Follow this link for choosing the best suits for your needs and platform e.g., helm, multcluster etc.
+https://istio.io/latest/docs/setup/install/
