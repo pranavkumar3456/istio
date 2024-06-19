@@ -1,0 +1,13 @@
+#once we decide that the reviews:v3 microservice is stable, we can route 100% of traffic to the reviews:v3. So, This is how canary deployments works.
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: reviews
+spec:
+  hosts:
+    - reviews
+  http:
+  - route:
+    - destination:
+        host: reviews
+        subset: v3
