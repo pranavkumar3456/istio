@@ -1,0 +1,9 @@
+#By default mTLS will be in permissive mode i.e., we can access ISTIO with or without mTLS certificate.
+apiVersion: security.istio.io/v1beta1
+kind: PeerAuthentication
+metadata:
+  name: mtls-mode
+  namespace: default
+spec:
+  mtls:
+    mode: STRICT
